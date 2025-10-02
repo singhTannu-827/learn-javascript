@@ -6,6 +6,34 @@
     <title>Document</title>
 </head>
 <body>
-    hello gungun
+    // Declare
+let fruits = ["Apple", "Banana", "Mango", "Orange"];
+
+// Access
+console.log(fruits[0]);   // Apple
+console.log(fruits.length);  // 4
+
+// Add element
+fruits.push("Grapes");        // End me add
+fruits.unshift("Pineapple");  // Start me add
+
+// Remove element
+fruits.pop();       // Last remove
+fruits.shift();     // First remove
+fruits.splice(1, 1); // Index 1 se remove (Banana)
+
+// Search
+console.log(fruits.includes("Mango")); // true
+console.log(fruits.indexOf("Orange")); // 2
+
+// Sort & Reverse
+fruits.sort();     // Alphabetically sort
+fruits.reverse();  // Reverse order
+
+// Loop
+for (let fruit of fruits) {
+  console.log(fruit);
+}
+
 </body>
 </html>
